@@ -1,0 +1,87 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.toolbar-title-md{
+  color: #CEBC98;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-family: 'Dancing Script', cursive;
+    line-height: 80px;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+.scroll-content, .item-md{
+  background:#023114;
+  color: #023114;
+}
+ion-icon {
+  color: white;
+}
+ion-icon span{
+  font-family: 'Dancing Script', cursive;
+}
+ion-header{
+    background:#023114;
+}
+ion-card.card {
+    box-shadow: none;
+    border-radius: 5px;
+  }
+.button-outline-md{
+  border-color: #CEBC98;
+    color: #CEBC98;
+}
+.tabs-md .tab-button {
+  background:rgba(53, 90, 67, 1);
+  color:#CEBC98;
+}
+.tabs-md .tab-button[aria-selected=true]{
+   color:#fff;
+}
+.toast-container{
+  background-color:rgba(53, 90, 67, 1);
+  color:rgba(115, 105, 67, 1);
+  text-align: center;
+}
+.alert-md .alert-wrapper {
+  background-color: rgba(53, 90, 67, 1);
+  color: #fff;
+  text-align:center;
+
+}
+.alert-md .alert-message  {
+    text-align:center;
+    color: #fff;
+}
+.alert-md .alert-head {
+  text-align:center;
+}
+.alert-md .alert-input{
+    color: #fff;
+}
+.select-text{
+  color:#fff;
+}
+.picker-md .picker-toolbar{
+  background: rgba(53, 90, 67, 1);
+}
+.picker-md .picker-columns{
+  background: rgba(53, 90, 67, 1);
+}
+.datetime-md {
+  color:#fff;
+}

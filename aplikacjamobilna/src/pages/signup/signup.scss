@@ -1,0 +1,38 @@
+page-signup {
+
+  p .dodaj_stajnie {
+      margin-bottom: 0px;
+      margin-top: 40px;
+    }
+
+    p.dodaj_stajnie strong {
+      color: #CEBC98;
+      font-size: 24px;
+      font-family: 'Dancing Script', cursive;
+      float: left;
+      line-height: 80px;
+      margin-left: 20px;
+      margin-bottom: 0px;
+      margin-top: 40px;
+
+    }
+    .item {
+        margin-bottom: 10px;
+        background: rgba(255,255,255,0.2);
+        border: medium none;
+        border-radius: 10px;
+    }
+    .text-input {
+          color: white;
+          border:0px;
+    }
+
+    #dodaj {
+      color: #CEBC98;
+      float: right;
+      text-transform:none;
+    }
+    img{
+    margin-top: 40px;
+    }
+}

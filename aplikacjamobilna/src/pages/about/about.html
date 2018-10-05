@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-title>Zarządzaj podajnikami
+       <button ion-button style="float:right;" clear (click)="logout()">
+          <ion-icon style="color:#CEBC98;margin-right:20px;" name="unlock"></ion-icon>
+        </button>
+      </ion-title>
+</ion-header>
+
+<ion-content padding>
+ <ion-list >
+   <ion-card  *ngFor="let item of dataSet; let msgIndex = index;">
+    <div style="text-align:center;">
+      <button ion-button style="width:150px;height:150px;" clear (click)="ustaw_dawke()">
+        <img style="width:150px;height:150px;" src="qń.png"  alt="" />
+       </button>
+      <p style="text-align:center;color:#CEBC98;font-family: 'Dancing Script', cursive;font-size:20px;" [innerHTML]="item.podajnik"></p>
+      <p class="zarządzaj">
+        <!--<button ion-button (click)="usunPodajnik(item.podajnik_id, msgIndex)">Usuń</button>-->
+        <button ion-button round outline (click)="presentConfirm(item.podajnik_id,msgIndex)">
+                              <ion-icon style="color:#CEBC98;" name="trash"></ion-icon>
+                          </button>
+
+                          <button ion-button round outline (click)="presentPrompt(item.podajnik_id)">
+                              <ion-icon style="color:#CEBC98;" name="create"></ion-icon>
+                          </button>
+      </p>
+    </div>
+</ion-card>
+    <div style="text-align:center;margin-top:40px;">
+      <button class="dodanie_podajnika" ion-button (click)="presentPrompt1()" >
+        <ion-icon name="add" style="float:left;color:#fff;"></ion-icon>
+      </button>
+      <strong style="color:#CEBC98; font-style: italic; margin: 20px 0 0 5px;">Dodaj podajnik</strong>
+    </div>
+
+      </ion-list>
+</ion-content>

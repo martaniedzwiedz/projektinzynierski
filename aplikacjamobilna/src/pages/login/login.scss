@@ -1,0 +1,39 @@
+page-login {
+  p.zlota_stajnia {
+    text-align: center;
+    color: #CEBC98;
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+
+  .item {
+      margin-bottom: 10px;
+      background: rgba(255,255,255,0.2);
+      border: medium none;
+      border-radius: 10px;
+}
+      .text-input {
+        color: white;
+        border:0px;
+      }
+      
+    #zaloguj {
+    color: #CEBC98;
+    float: right;
+      text-transform:none;
+  }
+
+  p.nowa_stajnia {
+    float: left;
+    margin-top: 40px;
+  }
+
+  p.nowa_stajnia strong {
+    float: left;
+    color: #CEBC98;
+    margin: 20px 0 0 5px;
+    font-style: italic;
+  }
+}

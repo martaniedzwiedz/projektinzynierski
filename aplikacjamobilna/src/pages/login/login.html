@@ -1,0 +1,26 @@
+<ion-content padding>
+  <ion-card-header>
+    <p class="zlota_stajnia">Złota<br />Stajnia</p>
+    <div style="text-align:center;">
+      <img style="width:200px;height:200px;" src="http://lesna-podkowa.pl/wp-content/uploads/2016/06/logo.png"  alt="" />
+    </div>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-list no-line>
+      <ion-item>
+        <ion-input type="text" placeholder="Moja Stajnia" [(ngModel)]="userData.username"> </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="password" placeholder="Hasło" [(ngModel)]="userData.password"> </ion-input>
+      </ion-item>
+
+        <button id="zaloguj" ion-button round outline (click)="login()"><ion-icon name="lock" style="color:#CEBC98;margin-right:8px;"></ion-icon>Zaloguj</button>
+
+
+    </ion-list>
+
+  <p class="nowa_stajnia"><button ion-fab mini color='primary' style="float:left;" (click)="signup()">+</button><strong>Stwórz nową stajnię</strong></p>
+
+</ion-card-content>
+</ion-content>

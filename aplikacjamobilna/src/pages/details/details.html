@@ -1,0 +1,81 @@
+<!--
+  Generated template for the DetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-title>
+      <button ion-button style="float:left;" clear (click)="back()">
+         <ion-icon style="color:#CEBC98;margin-left:20px;" name="arrow-back"></ion-icon>
+       </button>
+      </ion-title>
+</ion-header>
+
+<ion-content padding>
+  <ion-list no-line>
+    <div>
+    <ion-item>
+  <ion-label class="jedzonko">Śniadanie</ion-label>
+  <ion-toggle [(ngModel)]="sniadanie"></ion-toggle>
+      </ion-item>
+    <ion-item>
+      <ion-label>Godzina</ion-label>
+      <ion-datetime displayFormat="HH:mm" [(ngModel)]="myTime1" (ionChange)="f(myTime1,4)"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Dawka</ion-label>
+      <ion-select [(ngModel)]="dawka1" (ionChange)="f(dawka1,1)">
+        <ion-option value="0.25">0.25</ion-option>
+        <ion-option value="0.5">0.5</ion-option>
+        <ion-option value="0.75">0.75</ion-option>
+        <ion-option value="1">1</ion-option>
+      </ion-select>
+    </ion-item>
+  </div>
+
+  <div>
+  <ion-item>
+<ion-label class="jedzonko">Obiad</ion-label>
+<ion-toggle [(ngModel)]="obiad"></ion-toggle>
+    </ion-item>
+  <ion-item>
+    <ion-label>Godzina</ion-label>
+    <ion-datetime displayFormat="HH:mm" [(ngModel)]="myTime2" (ionChange)="f(myTime2,5)"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Dawka</ion-label>
+    <ion-select [(ngModel)]="dawka2" (ionChange)="f(dawka2,2)">
+      <ion-option value="0.25">0.25</ion-option>
+      <ion-option value="0.5">0.5</ion-option>
+      <ion-option value="0.75">0.75</ion-option>
+      <ion-option value="1">1</ion-option>
+    </ion-select>
+  </ion-item>
+</div>
+
+<div>
+<ion-item>
+<ion-label class="jedzonko">Kolacja</ion-label>
+<ion-toggle [(ngModel)]="kolacja"></ion-toggle>
+  </ion-item>
+<ion-item>
+  <ion-label>Godzina</ion-label>
+  <ion-datetime displayFormat="HH:mm" [(ngModel)]="myTime3" (ionChange)="f(myTime3,6)"></ion-datetime>
+</ion-item>
+
+<ion-item>
+  <ion-label>Dawka</ion-label>
+  <ion-select [(ngModel)]="dawka3" (ionChange)="f(dawka3,3)">
+    <ion-option value="0.25">0.25</ion-option>
+    <ion-option value="0.5">0.5</ion-option>
+    <ion-option value="0.75">0.75</ion-option>
+    <ion-option value="1">1</ion-option>
+  </ion-select>
+</ion-item>
+</div>
+
+</ion-list>
+</ion-content>

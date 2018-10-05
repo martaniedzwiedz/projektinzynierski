@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-title>Moja Stajnia
+       <button ion-button style="float:right;" clear (click)="logout()">
+          <ion-icon style="color:#CEBC98;margin-right:20px;" name="unlock"></ion-icon>
+        </button>
+      </ion-title>
+</ion-header>
+
+<ion-content padding>
+  <ion-list no-line>
+        <ion-item no-lines>
+          <ion-icon name="home">  <span style="margin-right: 5px;">{{userDetails.username}}</span></ion-icon>
+        </ion-item>
+        <ion-item  no-lines>
+          <ion-icon name="mail">  <span style="margin-right: 5px;">{{userDetails.email}}</span></ion-icon>
+        </ion-item>
+        <ion-item  no-lines>
+          <ion-icon name="person">  <span style="margin-right: 5px;">{{userDetails.name}}</span></ion-icon>
+        </ion-item>
+        <ion-item  no-lines>
+          <ion-icon name="star"><span style="margin-left: 5px; margin-right: 5px; font-family: 'Dancing Script', cursive;">Liczba koni:</span><span>{{dataSet ? dataSet.length : ''}}</span></ion-icon>
+        </ion-item>
+      </ion-list>
+</ion-content>

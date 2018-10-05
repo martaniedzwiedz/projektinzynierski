@@ -1,0 +1,28 @@
+<ion-content padding>
+  <ion-card-header>
+    <button ion-button style="float:left;" clear (click)="back()">
+       <ion-icon style="color:#CEBC98;margin-left:20px;" name="arrow-back"></ion-icon>
+     </button>
+     <p class="dodaj_stajnie"><img style="width:80px;height:80px;float:left;" src="http://lesna-podkowa.pl/wp-content/uploads/2016/06/logo.png" alt="" /> <strong> Dodaj nową stajnię </strong></p>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-list no-line>
+      <ion-item>
+          <ion-input type="text" placeholder="Nazwa Stajni"[(ngModel)]="userData.username"> </ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-input type="password" placeholder="Hasło" [(ngModel)]="userData.password"> </ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-input type="text" placeholder="Administrator" [(ngModel)]="userData.name"> </ion-input>
+      </ion-item>
+      <ion-item>
+            <ion-input type="text" placeholder="Adres e-mail" [(ngModel)]="userData.email"> </ion-input>
+      </ion-item>
+    </ion-list>
+
+<button id="dodaj" ion-button round outline (click)="signup()"><ion-icon name="lock" style="color:#CEBC98;margin-right:8px;"></ion-icon>Dodaj</button>
+
+</ion-card-content>
+</ion-content>

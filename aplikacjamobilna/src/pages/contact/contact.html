@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-title>Stan podajników
+       <button ion-button style="float:right;" clear (click)="logout()">
+          <ion-icon style="color:#CEBC98;margin-right:20px;" name="unlock"></ion-icon>
+        </button>
+
+      </ion-title>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button style="float:right;" clear (click)="update()">
+     <ion-icon style="color:#CEBC98;margin-right:20px;" name="refresh"></ion-icon>
+   </button>
+  <ion-list >
+      <ion-card *ngFor="let item of dataSet;">
+      <p style="text-align:center;color:#CEBC98;font-family: 'Dancing Script', cursive;font-size:20px;" [innerHTML]="item.podajnik"></p>
+      <p class="napis" style="text-align:center;color:rgba(125, 135, 129, 1);font-size:13px;">Napełnienie podajnika:</p>
+      <p style="text-align:center;color:#fff;font-size:25px;" [innerHTML]="item.stan"></p>
+    </ion-card>
+
+  </ion-list>
+</ion-content>
